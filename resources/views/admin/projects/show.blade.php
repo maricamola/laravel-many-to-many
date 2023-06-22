@@ -13,11 +13,11 @@
     </div>
 
 
-{{--
+
     <div class="d-flex justify-content-between align-items-center">
         <h6 class="text-center m-3">Tipologia: {{ $project->type}}</h6>
         <span>Data di creazione: {{ $project->date_creation}}</span>
-    </div> --}}
+    </div>
 
 
     {{-- Immagine qui!!!! --}}

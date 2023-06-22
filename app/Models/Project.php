@@ -26,6 +26,11 @@ class Project extends Model
         return $this->belongsTo(Category::class);
     }
 
+    public function technologies(){
+        //Con questa istruzione gli diciamo "dammi tutti le technologies di questo project"
+        return $this->belongsToMany(Technology::class);
+    }
+
 
     public static function generateSlug($str){
 

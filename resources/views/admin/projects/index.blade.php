@@ -29,7 +29,7 @@
             <tr>
                 <td>{{ $project->id }}</td>
                 <td>{{ $project->title }}</td>
-                <td><span class="badge text-bg-primary">{{ $project->category->name }}</span></td>
+                <td><span class="badge text-bg-primary">{{ $project->category?->name }}</span></td>
 
                 @php
                     $date = date_create($project->date_creation);

@@ -207,11 +207,19 @@ Nel DatabaseSeeder.php aggiungiamo anche Category
 
 ## Aggiungiamo l'entità "Technology" - Relazione Many to Many
 
-Creiamo la tabella da mettere in relazione (technologies)
+Creiamo la tabella da mettere in relazione (technologies) : 
+**php artisan make:migration create_technologies_table**
 
-Creiamo il model `Technology`
+Creiamo il model `Technology`:
+**php artisan make:model Technology**
 
-Creare la migration per la tabella pivot `project_technology` (il nome deve essere al singolare) 
+Creiamo il seeder `TechnologiesTableSeeder`:
+**php artisan make:seeder TechnologiesTableSeeder**
+
+Creare la migration per la tabella pivot `project_technology` (il nome deve essere al singolare) :
+**php artisan make:migration create_project_technology_table**
+
+Prima stabiliamo la colonna poi si dichiariamo che quella colonna è la FK quindi nella migration `project_technology`:
 
 Aggiungere ai model Technology e Project i metodi per definire la relazione many to many
 
