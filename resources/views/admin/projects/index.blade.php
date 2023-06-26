@@ -11,7 +11,7 @@
 
     <h4 class="mb-3">Elenco progetti</h4>
 
-    <a href="{{ route('admin.projects.create')}}" class="btn btn-primary mb-4"> Inserisci nuovo progetto </a>
+    <a href="{{ route('admin.projects.create')}}" class="btn btn-custom mb-4"> Inserisci nuovo progetto </a>
 
     <table class="table">
         <thead>

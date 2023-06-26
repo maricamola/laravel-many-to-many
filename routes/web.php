@@ -19,8 +19,8 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 */
 
 Route::get('/', [PageController::class, 'index'])->name('home');
-
 Route::get('/contatti', [PageController::class, 'contacts'])->name('contacts');
+
 
 
 Route::middleware(['auth' , 'verified'])
