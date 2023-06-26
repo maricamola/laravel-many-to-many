@@ -36,9 +36,6 @@
             @include('admin.partials.aside')
         @endauth
 
-
-
-
         <main class="overflow-auto w-100">
             @yield('content')
         </main>

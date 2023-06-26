@@ -14,3 +14,8 @@ header{
     -webkit-line-clamp: 3; /* start showing ellipsis when 3rd line is reached */
     white-space: pre-wrap; /* let the text wrap preserving spaces */
 }
+
+.btn-link{
+    text-decoration: none;
+    color: black
+}

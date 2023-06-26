@@ -1,17 +1,3 @@
-{{-- <header>
-    <ul class="nav">
-        <li class="nav-item">
-            <a class="nav-link active {{ Route::currentRouteName() === 'home' ? 'active' : '' }}" href="{{ route('home') }}">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link {{ Route::currentRouteName() === 'contacts' ? 'active' : '' }}" href="{{ route('contacts') }}">Contatti</a>
-        </li>
-        {{-- <li class="nav-item">
-            <a class="nav-link {{ Route::currentRouteName() === 'contacts' ? 'active' : '' }}" href="#">Link</a>
-        </li> --}}
-    {{-- </ul>
-</header> --}}
-
 <header>
 
     <div class="container">
@@ -32,9 +18,15 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav me-auto">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('contacts') }}">Contatti</a>
-                    </li>
+                    @auth()
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('admin.home') }}">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('admin.contacts') }}">Contatti</a>
+                        </li>
+                    @endauth
 
                 </ul>
 

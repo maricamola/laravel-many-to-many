@@ -32,6 +32,7 @@ Route::middleware(['auth' , 'verified'])
             Route::get('/', [DashboardController::class, 'index'])->name('home');
             //Aggiungiamo qui le altre rotte protette
             Route::get('/stats', [DashboardController::class, 'stats'])->name('stats');
+            Route::get('/contacts', [DashboardController::class, 'contacts'])->name('contacts');
             Route::resource('projects', ProjectController::class);
             Route::get('orderby/{direction}', [ProjectController::class, 'orderby'])->name('orderby');
         });

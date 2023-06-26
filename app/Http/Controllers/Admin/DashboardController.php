@@ -16,4 +16,9 @@ class DashboardController extends Controller
 
         return view('admin.stats');
     }
+
+    public function contacts(){
+
+        return view('admin.contacts');
+    }
 }
